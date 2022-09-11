@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package orderPack;
+
+service OrderService {
+    rpc O3Func (OrderRequest) returns (OrderReply) {}
+}
+
+message OrderRequest {
+    string name = 1;
+}
+
+message OrderReply {
+    string result = 1;
+}
